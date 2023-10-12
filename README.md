@@ -1,4 +1,4 @@
-# Efficient Algorithms for the Group Steiner Tree Problem with Many Group
+# Efficient Algorithms for the Group Steiner Tree Problem with Many Groups
 
 This is the source code of the paper 'Efficient Algorithms for the Group Steiner Tree Problem with Many Groups'.
 
@@ -6,9 +6,9 @@ This is the source code of the paper 'Efficient Algorithms for the Group Steiner
 
 - Environment
 - Data and Compile Command
-- Experiment 1 : PCSG
-- Experiment 2 : VLSI
-- Experiment 3 : Keyword Search
+- Experiment 1 : KG Summarization
+- Experiment 2 : VLSI Design
+- Experiment 3 : Keyword-Based KG Search
 - Experiment 4 : Parameter Study
 - - Experiment 4.1 parameter study on PCSG
   - Experiment 4.2 parameter study on VLSI
@@ -30,7 +30,7 @@ If you want to run our algorithms on a new graph, please build Hub Labeling foll
 
 The compile command for our C++ source codes is shown below: for `A.cpp`, we use `g++ A.cpp -o A -std=c++11` to compile it.
 
-## Experiment 1: PCSG
+## Experiment 1: KG Summarization
 
 This experiment is based on [PCSG](https://github.com/nju-websoft/PCSG "PCSG").
 
@@ -48,7 +48,7 @@ If you want to run our algorithms on more KGs, please following the code in [PCS
 
 
 
-## Experiment 2: VLSI
+## Experiment 2: VLSI Design
 
 The source code of this experiment is in `src/VLSI`.
 
@@ -56,7 +56,7 @@ Please compile `auto.cpp`,`gen.cpp`,`GSTGrow.cpp`,`GSTMerge.cpp`,`KeyKG.cpp`.
 
 Then use `./auto` to get the result. The result is in `table.txt`.
 
-## Experiment 3: Keyword Search
+## Experiment 3: Keyword-Based KG Search
 
 The source code of this experiment is in `src/KeywordSearch`.
 

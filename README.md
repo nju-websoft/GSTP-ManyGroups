@@ -5,7 +5,7 @@ This is the source code of the paper 'Efficient Algorithms for the Group Steiner
 ## Table of contents
 
 - Environment
-- Data
+- Data and Compile Command
 - Experiment 1 : PCSG
 - Experiment 2 : VLSI
 - Experiment 3 : Keyword Search

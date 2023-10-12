@@ -60,7 +60,7 @@ Then use `./auto` to get the result. The result is in `table.txt`.
 
 The source code of this experiment is in `src/KeywordSearch`.
 
-You should  download the dataset from `KeywordSearch_dataset.zip` on [], then put`WeightPLLlabel.txt`, `kwName.txt`, `kwMap.txt` and `query.txt` into the source code folder.
+You should  download the dataset from `KeywordSearch_dataset.zip` on [], then put `WeightPLLlabel.txt`, `kwName.txt`, `kwMap.txt` and `query.txt` into the source code folder.
 
 First, please compile and use `change_hublabel.cpp` to change `WeightPLLlabel.txt` to `newhublabel.txt`.
 

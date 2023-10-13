@@ -24,7 +24,7 @@ Python 3
 
 ## Data and Compile Command
 
-Our dataset is available on [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8437408.svg)](https://doi.org/10.5281/zenodo.8437408).
+Our datasets is available on [datasets_part1](https://doi.org/10.6084/m9.figshare.24306124.v1) and [datasets_part2](https://doi.org/10.6084/m9.figshare.24307114.v1).
 
 If you want to run our algorithms on a new graph, please build Hub Labeling following [KeyKG](https://github.com/nju-websoft/KeyKG "KeyKG") by yourself.
 
@@ -40,7 +40,7 @@ Our source code is in  `src/PCSG`.
 
 You need to compile `src/PCSG/GSTGrow.cpp` ,`src/PCSG/GSTMerge.cpp` and  `src/PCSG/KeyKG.cpp` first. 
 
-Then, you need to put the executable file, `newhublabel.txt` and `invertedTable.txt` into a folder. These dataset are in `PCSG_dataset.zip` on [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8437408.svg)](https://doi.org/10.5281/zenodo.8437408).
+Then, you need to put the executable file, `newhublabel.txt` and `invertedTable.txt` into a folder. These dataset are in `PCSG_dataset.zip` on our datasets.
 
 Now, you can run the executable file to get a result.
 
@@ -60,7 +60,7 @@ Then use `./auto` to get the result. The result is in `table.txt`.
 
 The source code of this experiment is in `src/KeywordSearch`.
 
-You should  download the dataset from `KeywordSearch_dataset.zip` on [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8437408.svg)](https://doi.org/10.5281/zenodo.8437408), then put `WeightPLLlabel.txt`, `kwName.txt`, `kwMap.txt` and `query.txt` into the source code folder.
+You should  download the dataset from `KeywordSearch_dataset.zip` in our datasets, then put `WeightPLLlabel.txt`, `kwName.txt`, `kwMap.txt` and `query.txt` into the source code folder.
 
 First, please compile and use `change_hublabel.cpp` to change `WeightPLLlabel.txt` to `newhublabel.txt`.
 
@@ -76,7 +76,7 @@ Next, please compile and run `GSTGrow.cpp`, `GSTMerge.cpp` and `KeyKG.cpp`.
 
 The source code is in `src/parameter/PCSG`.
 
-Please download the `newhublabel.txt` and `invertedTable.txt` of ID from `PCSG_dataset.zip` on [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8437408.svg)](https://doi.org/10.5281/zenodo.8437408).
+Please download the `newhublabel.txt` and `invertedTable.txt` of ID from `PCSG_dataset.zip` in our datasets.
 
 Then compile and run `KeyKG.cpp` to get the baseline result.
 

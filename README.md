@@ -68,7 +68,7 @@ Then, please use `query_change.py` to change `kwName.txt`, `kwMap.txt` and `quer
 
 Next, please compile and run `GSTGrow.cpp`, `GSTMerge.cpp` and `KeyKG.cpp`. 
 
-
+We record the exact solution in `/exact_result`. There are 4 files `DBpedia_iw.txt`, `DBpedia_uw.txt`, `LinkedMDB_iw.txt`, `LinkedMDB_uw.txt` . Put the exact solution file, `KeyKG_result.txt`, `Grow_result.txt` and `Merge_result.txt` into a folder, and change the exact solution file name to `exact_result.txt`, then compile `calc.cpp` and run it. You can get a result file `count.txt`, and it will show you the approximation ratio.
 
 ## Experiment 4: Parameter Study
 

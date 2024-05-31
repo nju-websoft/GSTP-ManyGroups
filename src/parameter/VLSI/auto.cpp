@@ -20,13 +20,13 @@ int main()
 		int n=g*5;
 		memset(ave_t,0,sizeof(ave_t));
 		memset(ave_s,0,sizeof(ave_s));
-		for(int T=1;T<=30;++T)
+		for(int T=1;T<=20;++T)
 		{ 
 			freopen("tmp.txt","w",stdout);
 			printf("%d %d\n",n,g);
 			fclose(stdout);
 			system("./gen < tmp.txt > point.txt");
-			system("./KeyKG < point.txt > kkg_result.txt");
+			system("./GSTGrow < point.txt > grow_result.txt");
 			system("./1_1 < point.txt > res_1_1.txt");
 			system("./1_2 < point.txt > res_1_2.txt");
 			system("./1_3 < point.txt > res_1_3.txt");
@@ -36,7 +36,7 @@ int main()
 			system("./1_7 < point.txt > res_1_7.txt");
 			system("./1_8 < point.txt > res_1_8.txt");
 			system("./1_9 < point.txt > res_1_9.txt");
-			freopen("kkg_result.txt","r",stdin);
+			freopen("grow_result.txt","r",stdin);
 			scanf("%lf%lf",&t[0][T],&s[0][T]);
 			fclose(stdin);
 			freopen("res_1_1.txt","r",stdin);
@@ -66,8 +66,8 @@ int main()
 			freopen("res_1_9.txt","r",stdin);
 			scanf("%lf%lf",&t[9][T],&s[9][T]);
 			fclose(stdin);
-			for(int i=0;i<=9;++i)ave_t[i]+=t[i][T]/30.0;
-			for(int i=1;i<=9;++i)s[i][T]/=s[0][T],ave_s[i]+=s[i][T]/30.0;
+			for(int i=0;i<=9;++i)ave_t[i]+=t[i][T]/20.0;
+			for(int i=1;i<=9;++i)s[i][T]/=s[0][T],ave_s[i]+=s[i][T]/20.0;
 			cerr<<n<<" "<<g<<endl;
 		}
 		Answer x;

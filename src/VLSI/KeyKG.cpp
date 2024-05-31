@@ -178,6 +178,7 @@ int solve2(vector< pair<int,int> > P, vector< pair< pair<int,int>,pair<int,int> 
 int start_time;
 int main()
 {
+	freopen("point.txt","r",stdin);
 	scanf("%d%d",&p,&g);
 	for(int i=1;i<=p;++i)
 	{

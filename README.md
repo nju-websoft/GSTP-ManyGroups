@@ -6,10 +6,10 @@ This is the source code of the paper 'Efficient Algorithms for the Group Steiner
 
 - Environment
 - Data and Compile Command
-- Experiment 1 : KG Summarization
-- Experiment 2 : VLSI Design
-- Experiment 3 : Keyword Search over KGs
-- Experiment 4 : Parameter Study
+- Main Experiment 1: KG Summarization
+- Main Experiment 2: VLSI Design
+- Universality Study: Keyword Search
+- Parameter Study
 - - Experiment 4.1 parameter study on PCSG
   - Experiment 4.2 parameter study on VLSI
 - Citation
@@ -30,7 +30,7 @@ If you want to run our algorithms on a new graph, please build Hub Labeling foll
 
 The compile command for our C++ source codes is shown below: for `A.cpp`, we use `g++ A.cpp -o A -std=c++11` to compile it.
 
-## Experiment 1: KG Summarization
+## Main Experiment 1: KG Summarization
 
 This experiment is based on [PCSG](https://github.com/nju-websoft/PCSG "PCSG").
 
@@ -54,9 +54,9 @@ Then, you need to use the original graph in `original_graph.zip`, under the `/PC
 
 If you want to run our algorithms on more KGs, please following the code in [PCSG](https://github.com/nju-websoft/PCSG "PCSG") to get the HubLabel and invertedTable. Then, you can use `src/PCSG/change_hublabel.cpp` to transform the hublabel into the new hublabel (which records the address of the precursor of each hub).
 
+Building PLL is in `src/PLL.cpp`, put the `PLL.cpp` and the graph in `original_graph.zip` under the `/PCSG` into a new folder, compile `PLL.cpp` and use `./PLL` to run it.
 
-
-## Experiment 2: VLSI Design
+## Main Experiment 2: VLSI Design
 
 The source code of this experiment is in `src/VLSI`.
 
@@ -64,7 +64,9 @@ Please compile `auto.cpp`,`gen.cpp`,`GSTGrow.cpp`,`GSTMerge.cpp`,`KeyKG.cpp`,`Im
 
 Then use `./auto` to get the result. The result is in `table.txt`.
 
-## Experiment 3: Keyword Search over KGs
+The upper bound experiment is in `src/VLSI_upperbound`, use the way similar to the above VLSI experiment to run them.
+
+## Universality Study: Keyword Search
 
 The source code of this experiment is in `src/KeywordSearch`.
 
@@ -86,7 +88,9 @@ You should download the dataset from `original_graph.zip`, and find the `/Keywor
 
 We record the exact solution in `/exact_result`. There are 4 files `DBpedia_iw.txt`, `DBpedia_uw.txt`, `LinkedMDB_iw.txt`, `LinkedMDB_uw.txt` . Put the exact solution file, `KeyKG_result.txt`, `Grow_result.txt` and `Merge_result.txt` , `ImprovAPP_result.txt` and `PartialOPT_result.txt`into a folder, and change the exact solution file name to `exact_result.txt`, then compile `calc.cpp` , `calc2.cpp` and run them. You can get result files `count.txt` and `count2.txt`, and they will show you the approximation ratio.
 
-## Experiment 4: Parameter Study
+Building PLL is in `src/PLL.cpp`, put the `PLL.cpp` and the graph in `original_graph.zip` under the `/KeywordSearch` into a new folder, compile `PLL.cpp` and use `./PLL` to run it.
+
+## Parameter Study
 
 ### Experiment 4.1 Parameter Study on PCSG
 

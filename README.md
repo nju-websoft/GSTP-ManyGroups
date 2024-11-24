@@ -1,6 +1,6 @@
-# Efficient Algorithms for the Group Steiner Tree Problem with Many Groups
+# Practical Algorithms for the Group Steiner Tree Problem with Many Groups
 
-This is the source code of the paper 'Efficient Algorithms for the Group Steiner Tree Problem with Many Groups'.
+This is the source code of the paper 'Practical Algorithms for the Group Steiner Tree Problem with Many Groups'.
 
 ## Table of contents
 
